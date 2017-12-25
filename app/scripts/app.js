@@ -15,12 +15,6 @@
         url: '/',
         templateUrl: '/templates/album.html'
       });
-
-    $stateProvider
-      .state('collection', {
-        url: '/',
-        templateUrl: '/templates/collection.html'
-      });
   }
 
   angular
