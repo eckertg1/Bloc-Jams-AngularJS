@@ -16,10 +16,10 @@
         url: '/collection',
         controller: 'CollectionCtrl as collection',
         templateUrl: '/templates/collection.html'
-      });
+      })
       .state('album', {
         url: '/',
-        controller: 'AblumCtrl as album'
+        controller: 'AblumCtrl as album',
         templateUrl: '/templates/album.html'
       });
   }
