@@ -10,7 +10,7 @@
     *@desc Currently used Album
     *@type {object}
     */
-    var currentAlbum = Fixtures.getAblum();
+    var currentAlbum = Fixtures.getAlbum();
 
     /**
     *@desc Buzz object audio file
@@ -82,7 +82,7 @@
     * @desc changes the song from playing to paused
     * @param {Object} song
     */
-    Songplayer.pause = function(song){
+    SongPlayer.pause = function(song){
       song = song || SongPlayer.currentSong;
       currentBuzzObject.pause();
       song.playing = false;
@@ -107,7 +107,7 @@
       if (currentSongIndex < 0){
         stopSong();
       } else {
-        var song = currentAblum.songs[currentSongIndex];
+        var song = currentAlbum.songs[currentSongIndex];
         setSong(song);
         playSong(song);
       }
@@ -124,13 +124,13 @@
       if (currentSongIndex > currentAlbum.songs.length){
         stopSong();
       } else {
-        var song = currentAblum.songs[currentSongIndex];
+        var song = currentAlbum.songs[currentSongIndex];
         setSong(song);
         playSong(song);
       }
     };
 
-    return Songplayer;
+    return SongPlayer;
   }
 
   angular

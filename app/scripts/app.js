@@ -3,7 +3,7 @@
     $locationProvider
       .html5Mode({
         enabled: true,
-        requiredBase: false
+        requireBase: false
       });
 
     $stateProvider
@@ -18,8 +18,8 @@
         templateUrl: '/templates/collection.html'
       })
       .state('album', {
-        url: '/',
-        controller: 'AblumCtrl as album',
+        url: '/album',
+        controller: 'AlbumCtrl as album',
         templateUrl: '/templates/album.html'
       });
   }
