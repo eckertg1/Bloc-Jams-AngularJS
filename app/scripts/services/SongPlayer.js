@@ -7,6 +7,12 @@
     var SongPlayer = {};
 
     /**
+    *@desc Volume is set to a number
+    *@type {number}
+    */
+    SongPlayer.volume = 60;
+
+    /**
     *@desc Currently used Album
     *@type {object}
     */
@@ -151,6 +157,15 @@
              currentBuzzObject.setTime(time);
          }
      };
+
+     /**
+      * @function setVoluem
+      * @desc Set volume of song player
+      * @param {Number} volume
+      */
+      SongPlayer.setVolume = function(volume) {
+              currentBuzzObject.setVolume(volume);
+      };
     return SongPlayer;
   }
 
